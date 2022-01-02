@@ -180,6 +180,10 @@ img {
     width: 30px;
 }
 @media screen and (max-width: 480px) {
+    body {
+        margin-top: 0;
+    }
+    
     .personal-information-container {
         display: block;
     }
