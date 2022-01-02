@@ -12,7 +12,6 @@ body {
 }
 #input-area {
     width: 100%;
-    margin-top: 300px;
     background-color: #2879B0;
     padding: 10px;
 }
@@ -32,20 +31,16 @@ textarea {
     font-size: 1em;
 }
 #afterClick {
-    width: 600px;
-    margin: 0 auto;
     display: none;
 }
 #submit-area {
     width: 100%;
     height: auto;
     display: none;
-    align-items: center;
-    justify-content: center;
 }
 #submit {
     width: 80px;
-    margin-left: 270px;
+    margin-left: 50%;
     margin-top: 25px;
     padding: 5px;
     background-color: #2879B0;
