@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightgray;
+    margin-top: 40px;
+}
+.blue {
+    color: blue;
+}
+#input-area {
+    width: 600px;
+    margin-top: 300px;
+    background-color: #2879B0;
+    padding: 10px;
+}
+
+input, textarea {
+    width: 98.5%;
+    margin: 3px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    width: 98.5%;
+}
+#bio {
+    height: 80px;
+    font-size: 1em;
+}
+#afterClick {
+    width: 600px;
+    margin: 0 auto;
+    display: none;
+}
+#submit-area {
+    width: 100vw;
+    height: 60vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#submit {
+    width: 80px;
+    margin-left: 270px;
+    margin-top: 25px;
+    padding: 5px;
+    background-color: #2879B0;
+    font-size: 1.3em;
+    border: 1px solid #2879B0;
+    margin-bottom: 18px;
+    color: white;
+    cursor: pointer;
+}
+.box-container {
+    font-size: 1.2em;
+}
+.area25 {
+    flex-basis: 200px;
+}
+
+.nickname-area {
+    background-color: #1769AA;
+    color: white;
+    padding: 5px;
+}
+
+.nickname-area:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.box {
+    width: 99vw;
+    padding: 7px;
+    margin: 2px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-center {
+    text-align: center;  
+    width: 100vw;  
+    height: 80px;  
+    padding-top: 20px;
+}
+
+#addPlayer {
+    background-color: #7636D1;
+    font-size: 1.3em;
+    padding: 5px;
+    color: #FEFEFC;
+    cursor: pointer;
+    width: 20vw;
+}
+
+/* single player details css */
+
+img {
+    width: 100%;
+}
+.image-responsive {
+    width: 150px;
+}
+
+.showDetails {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 1%;
+}
+.first-grid, .last-grid {
+    padding: 1%;
+    display: flex;
+    background-color: white;
+    margin: 10px;
+    width: 100%;
+}
+#searchPlayer{
+    width: 400px;
+    margin: 0 auto;
+}
+#searchPlayer button {
+   width: 80px;
+   background-color: #2196F3;
+   color: #F8FCFF;
+   margin-left: 160px;
+   padding: 3px;
+   cursor: pointer;
+   font-size: 1.3em;
+   margin-top: 10px;
+   margin-bottom: 40px;
+}
+.last-grid div {
+    font-size: 1.1em;
+    margin-top: 10px;
+    padding: 1%;
+}
+.nameAndTeam {
+    padding-top: 100px;
+    margin-left: 40px;
+}
+.personal-information-container {
+    width: 88.7vw;
+    display: flex;
+}
+.personal-information {
+    width: 29%;
+    padding: 1%;
+    background-color: white;
+    margin: 10px;
+    height: 40vh;
+}
+
+.personal-information > div {
+    margin-top: 10px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.scoreData {
+    width: 71%;
+    margin: 10px 0 10px 0;
+    background-color: white;
+    padding: 1%;
+}
+
+.showScore {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+.showScore div {
+    width: 30px;
+}
