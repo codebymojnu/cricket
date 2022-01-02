@@ -122,15 +122,19 @@ img {
     width: 400px;
     margin: 0 auto;
 }
+
+#searchPlayer input {
+    width: 90%;
+    margin: 10px;
+}
 #searchPlayer button {
    width: 80px;
    background-color: #2196F3;
    color: #F8FCFF;
-   margin-left: 160px;
-   padding: 3px;
+   margin-left: 38%;
+   padding: 1px;
    cursor: pointer;
-   font-size: 1.3em;
-   margin-top: 10px;
+   font-size: 1.2em;
    margin-bottom: 40px;
 }
 .last-grid div {
@@ -143,11 +147,11 @@ img {
     margin-left: 40px;
 }
 .personal-information-container {
-    width: 88.7vw;
+    width: 100%;
     display: flex;
 }
 .personal-information {
-    width: 29%;
+    width: 25%;
     padding: 1%;
     background-color: white;
     margin: 10px;
@@ -163,7 +167,7 @@ img {
 }
 
 .scoreData {
-    width: 71%;
+    width: 75%;
     margin: 10px 0 10px 0;
     background-color: white;
     padding: 1%;
@@ -180,3 +184,21 @@ img {
 .showScore div {
     width: 30px;
 }
+@media screen and (max-width: 480px) {
+    .personal-information-container {
+        display: block;
+    }
+    .personal-information {
+        width: 100%;
+        padding: 1%;
+        margin: 10px;
+        background-color: white;
+        height: auto;
+    }
+    .scoreData {
+        width: 100%;
+        margin: 10px;
+        background-color: white;
+        padding: 1%;
+    }
+  }
