@@ -37,6 +37,18 @@ function clearForm(){
     document.querySelector('#born').value = '';
     document.querySelector('#bio').value = '';
 }
+
+// loader 
+
+function loader(show) {
+    if (show) {
+        document.querySelector('.loader').style.display = 'flex';
+    }
+    else {
+        document.querySelector('.loader').style.display = 'none';
+    }
+}
+
 // post data
 
 function postToServer(postInfo) {
@@ -53,6 +65,7 @@ function postToServer(postInfo) {
 
 // load data
 function loadData() {
+    loader(true);
     fetch('https://radiant-reef-83234.herokuapp.com/api/players')
         .then(response => response.json())
         .then(data => showUI(data));
@@ -77,6 +90,7 @@ function showUI(data) {
             displayNone();
             dynamicFilter(nicknameValue);
         })
+        loader(false);
     }
 }
 
@@ -95,6 +109,7 @@ document.querySelector('#addPlayer').addEventListener('click', function () {
 // click nickname and dynamic filter with nickname
 
 function dynamicFilter(nicknameClick) {
+    loader(true);
     fetch(`https://radiant-reef-83234.herokuapp.com/api/${nicknameClick}`)
         .then(response => response.json())
         .then(playerData => showDetails(playerData))
@@ -151,6 +166,7 @@ function showDetails(singlePlayerData) {
             <div>${bio}</div>
         </div>
     </div>`;
+    loader(false);
     document.querySelector('.container2').appendChild(div2);
 }
 
