@@ -19,7 +19,7 @@ document.getElementById('submit').addEventListener('click', function () {
     const phone = document.querySelector('#phone').value;
     const born = document.querySelector('#born').value;
     const bio = document.querySelector('#bio').value;
-    const data = { name: name, nickname: nickname, highScore: parseInt(highScore), role: role, birthPlace: birthPlace, playerImgLink: playerImgLink, bestBowling: bestBowling, team: team, phone: phone, born: born, bio: bio };
+    const data = { name: name, nickname: nickname, highScore: highScore, role: role, birthPlace: birthPlace, playerImgLink: playerImgLink, bestBowling: bestBowling, team: team, phone: phone, born: born, bio: bio };
     postToServer(data);
     clearForm();
 })
